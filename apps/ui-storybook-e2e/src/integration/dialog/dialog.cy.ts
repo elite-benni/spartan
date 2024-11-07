@@ -129,6 +129,8 @@ describe('dialog--default', () => {
 				.findByText(/close nested dialog/i)
 				.click();
 
+			cy.get('.cdk-overlay-backdrop').should('have.length', 1);
+
 			cy.get('.cdk-overlay-backdrop').click({ force: true });
 
 			cy.findAllByText(/open dialog/i).should('have.length', 1);
@@ -195,8 +197,9 @@ describe('dialog--dynamic-component', () => {
 				.findByText(/close nested dialog/i)
 				.click();
 
+			cy.get('.cdk-overlay-backdrop').should('have.length', 1);
+      
 			cy.get('.cdk-overlay-backdrop').click({ force: true });
-
 			cy.findAllByText(/open dialog/i).should('have.length', 1);
 			cy.findAllByText(/open dialog/i).should('have.focus');
 		});
