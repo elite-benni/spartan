@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, forwardRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, forwardRef, ViewEncapsulation } from '@angular/core';
 import { BrnDialogComponent, BrnDialogOverlayComponent } from '@spartan-ng/brain/dialog';
 import { HlmDialogOverlayDirective } from './hlm-dialog-overlay.directive';
 
@@ -23,6 +23,6 @@ import { HlmDialogOverlayDirective } from './hlm-dialog-overlay.directive';
 export class HlmDialogComponent extends BrnDialogComponent {
 	constructor() {
 		super();
-		this.closeDelay = 100;
+		this.closeDelayState().set(100);
 	}
 }
