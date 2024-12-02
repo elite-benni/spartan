@@ -19,14 +19,14 @@ export class BrnPopoverTriggerDirective extends BrnDialogTriggerDirective {
 	constructor() {
 		super();
 		if (!this._brnDialog) return;
-		this._brnDialog.attachTo = this._host.nativeElement;
-		this._brnDialog.closeOnOutsidePointerEvents = true;
+		this._brnDialog.attachToState().set(this._host.nativeElement);
+		this._brnDialog.closeOnOutsidePointerEventsState().set(true);
 	}
 
 	@Input()
 	public set brnPopoverTriggerFor(brnDialog: BrnPopoverComponent) {
-		brnDialog.attachTo = this._host.nativeElement;
-		brnDialog.closeOnOutsidePointerEvents = true;
-		super.brnDialogTriggerFor = brnDialog;
+		brnDialog.attachToState().set(this._host.nativeElement);
+		brnDialog.closeOnOutsidePointerEventsState().set(true);
+		this.brnDialogTriggerForState().set(brnDialog);
 	}
 }
