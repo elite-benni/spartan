@@ -5,7 +5,7 @@ zerops:
       envVariables:
         NODE_OPTIONS: --max-old-space-size=8192
       buildCommands:
-        - pnpm i
+        - pnpm i --prod
         - npx nx build app --prod
       deployFiles:
         - node_modules
