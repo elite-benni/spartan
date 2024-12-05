@@ -11,6 +11,9 @@ importers:
       '@analogjs/content':
         specifier: 1.9.4
         version: 1.9.4(tdsk7hnapjro3itppceug6jgla)
+      '@analogjs/platform':
+        specifier: 1.9.4
+        version: 1.9.4(gfoofhagh3rm2t44pjocsfmb4y)
       '@analogjs/router':
         specifier: 1.9.4
         version: 1.9.4(@analogjs/content@1.9.4(tdsk7hnapjro3itppceug6jgla))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(@angular/router@18.2.5(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.5(@angular/animations@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1))
@@ -20,9 +23,18 @@ importers:
       '@analogjs/vite-plugin-angular':
         specifier: 1.9.4
         version: 1.9.4(swn52cl7gcomo5wu2nogywmide)
+      '@angular-devkit/build-angular':
+        specifier: 18.2.5
+        version: 18.2.5(z5he5jzzbav5o5wmyxs66wg6ua)
+      '@angular-devkit/core':
+        specifier: 18.2.5
+        version: 18.2.5(chokidar@3.6.0)
       '@angular/animations':
         specifier: 18.2.5
         version: 18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))
+      '@angular/build':
+        specifier: 18.2.5
+        version: 18.2.5(@angular/compiler-cli@18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@angular/platform-server@18.2.5(@angular/animations@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.5(@angular/animations@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))))(@types/node@22.6.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.49)(stylus@0.64.0)(tailwindcss@3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))(terser@5.31.6)(typescript@5.5.4)
       '@angular/cdk':
         specifier: 18.2.5
         version: 18.2.5(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
@@ -32,6 +44,9 @@ importers:
       '@angular/compiler':
         specifier: 18.2.5
         version: 18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))
+      '@angular/compiler-cli':
+        specifier: 18.2.5
+        version: 18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4)
       '@angular/core':
         specifier: 18.2.5
         version: 18.2.5(rxjs@7.8.1)(zone.js@0.14.10)
@@ -53,6 +68,9 @@ importers:
       '@ng-icons/core':
         specifier: 29.10.0
         version: 29.10.0(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
+      '@ng-icons/lucide':
+        specifier: 29.10.0
+        version: 29.10.0
       '@ngneat/overview':
         specifier: ^5.1.1
         version: 5.1.1(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))
@@ -68,9 +86,18 @@ importers:
       '@nx/devkit':
         specifier: 20.1.1
         version: 20.1.1(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))
+      '@nx/js':
+        specifier: 20.1.1
+        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
       '@nx/plugin':
         specifier: 20.1.1
         version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(@zkochan/js-yaml@0.0.7)(eslint@9.15.0(jiti@2.4.0))(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
+      '@nx/vite':
+        specifier: 20.1.1
+        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))(vite@5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))(vitest@2.1.1(@types/node@22.6.2)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))
+      '@nx/web':
+        specifier: 20.1.1
+        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
       '@swc/helpers':
         specifier: 0.5.13
         version: 0.5.13
@@ -83,6 +110,21 @@ importers:
       '@trpc/server':
         specifier: 10.45.2
         version: 10.45.2
+      '@types/luxon':
+        specifier: ^3.4.2
+        version: 3.4.2
+      '@types/marked':
+        specifier: ^5.0.2
+        version: 5.0.2
+      '@types/node':
+        specifier: 22.6.2
+        version: 22.6.2
+      '@types/prismjs':
+        specifier: ^1.26.4
+        version: 1.26.5
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -125,6 +167,9 @@ importers:
       mermaid:
         specifier: ^11.2.1
         version: 11.4.0
+      ng-packagr:
+        specifier: 18.2.1
+        version: 18.2.1(@angular/compiler-cli@18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(tailwindcss@3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))(tslib@2.7.0)(typescript@5.5.4)
       ng-signal-forms:
         specifier: ^1.14.0
         version: 1.14.0(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
@@ -134,6 +179,9 @@ importers:
       ngx-sonner:
         specifier: 2.0.2
         version: 2.0.2(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))
+      nx:
+        specifier: 20.1.1
+        version: 20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))
       ofetch:
         specifier: ^1.4.0
         version: 1.4.1
@@ -143,9 +191,24 @@ importers:
       postgres:
         specifier: ^3.4.4
         version: 3.4.5
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      prettier-plugin-organize-imports:
+        specifier: ^4.1.0
+        version: 4.1.0(prettier@3.3.3)(typescript@5.5.4)
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.8
+        version: 0.6.9(prettier-plugin-organize-imports@4.1.0(prettier@3.3.3)(typescript@5.5.4))(prettier@3.3.3)
       prismjs:
         specifier: ^1.29.0
         version: 1.29.0
+      replace-json-property:
+        specifier: ^1.9.0
+        version: 1.9.0
+      rollup-plugin-visualizer:
+        specifier: ^5.12.0
+        version: 5.12.0(rollup@4.27.3)
       rxjs:
         specifier: ~7.8.1
         version: 7.8.1
@@ -161,15 +224,27 @@ importers:
       tailwind-merge:
         specifier: ^2.5.2
         version: 2.5.4
+      tailwindcss:
+        specifier: ^3.4.13
+        version: 3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4))
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))
       tslib:
         specifier: ~2.7.0
         version: 2.7.0
+      typescript:
+        specifier: ~5.5.0
+        version: 5.5.4
       ufo:
         specifier: 1.5.4
         version: 1.5.4
+      vite:
+        specifier: 5.4.8
+        version: 5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6)
+      vite-tsconfig-paths:
+        specifier: 5.0.1
+        version: 5.0.1(typescript@5.5.4)(vite@5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))
       zod:
         specifier: 3.23.8
         version: 3.23.8
@@ -177,27 +252,12 @@ importers:
         specifier: ~0.14.10
         version: 0.14.10
     devDependencies:
-      '@analogjs/platform':
-        specifier: 1.9.4
-        version: 1.9.4(gfoofhagh3rm2t44pjocsfmb4y)
-      '@angular-devkit/build-angular':
-        specifier: 18.2.5
-        version: 18.2.5(z5he5jzzbav5o5wmyxs66wg6ua)
-      '@angular-devkit/core':
-        specifier: 18.2.5
-        version: 18.2.5(chokidar@3.6.0)
       '@angular-devkit/schematics':
         specifier: 18.2.5
         version: 18.2.5(chokidar@3.6.0)
-      '@angular/build':
-        specifier: 18.2.5
-        version: 18.2.5(@angular/compiler-cli@18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@angular/platform-server@18.2.5(@angular/animations@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.5(@angular/animations@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10))))(@types/node@22.6.2)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.49)(stylus@0.64.0)(tailwindcss@3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))(terser@5.31.6)(typescript@5.5.4)
       '@angular/cli':
         specifier: ~18.2.6
         version: 18.2.12(chokidar@3.6.0)
-      '@angular/compiler-cli':
-        specifier: 18.2.5
-        version: 18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4)
       '@angular/language-service':
         specifier: 18.2.5
         version: 18.2.5
@@ -216,9 +276,6 @@ importers:
       '@faker-js/faker':
         specifier: ^9.0.3
         version: 9.2.0
-      '@ng-icons/lucide':
-        specifier: 29.10.0
-        version: 29.10.0
       '@ngtools/webpack':
         specifier: 18.2.5
         version: 18.2.5(@angular/compiler-cli@18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(typescript@5.5.4)(webpack@5.96.1(@swc/core@1.7.26(@swc/helpers@0.5.13))(esbuild@0.24.0))
@@ -234,18 +291,6 @@ importers:
       '@nx/jest':
         specifier: 20.1.1
         version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@nx/js':
-        specifier: 20.1.1
-        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@nx/storybook':
-        specifier: 20.1.1
-        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(@zkochan/js-yaml@0.0.7)(cypress@13.15.0)(eslint@9.15.0(jiti@2.4.0))(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@nx/vite':
-        specifier: 20.1.1
-        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))(vite@5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))(vitest@2.1.1(@types/node@22.6.2)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))
-      '@nx/web':
-        specifier: 20.1.1
-        version: 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
       '@nx/workspace':
         specifier: 20.1.1
         version: 20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))
@@ -312,18 +357,6 @@ importers:
       '@types/jest-axe':
         specifier: ^3.5.9
         version: 3.5.9
-      '@types/luxon':
-        specifier: ^3.4.2
-        version: 3.4.2
-      '@types/marked':
-        specifier: ^5.0.2
-        version: 5.0.2
-      '@types/node':
-        specifier: 22.6.2
-        version: 22.6.2
-      '@types/prismjs':
-        specifier: ^1.26.4
-        version: 1.26.5
       '@types/testing-library__jest-dom':
         specifier: ^5.14.9
         version: 5.14.9
@@ -339,9 +372,6 @@ importers:
       angular-eslint:
         specifier: ^18.4.1
         version: 18.4.1(@angular-devkit/core@18.2.5(chokidar@3.6.0))(@angular-devkit/schematics@18.2.5(chokidar@3.6.0))(@typescript-eslint/types@8.15.0)(@typescript-eslint/utils@8.15.0(eslint@9.15.0(jiti@2.4.0))(typescript@5.5.4))(eslint@9.15.0(jiti@2.4.0))(typescript-eslint@8.15.0(eslint@9.15.0(jiti@2.4.0))(typescript@5.5.4))(typescript@5.5.4)
-      autoprefixer:
-        specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.49)
       axe-core:
         specifier: ^4.10.0
         version: 4.10.2
@@ -402,12 +432,6 @@ importers:
       less:
         specifier: ^4.2.0
         version: 4.2.0
-      ng-packagr:
-        specifier: 18.2.1
-        version: 18.2.1(@angular/compiler-cli@18.2.5(@angular/compiler@18.2.5(@angular/core@18.2.5(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(tailwindcss@3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))(tslib@2.7.0)(typescript@5.5.4)
-      nx:
-        specifier: 20.1.1
-        version: 20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))
       playwright:
         specifier: ^1.47.2
         version: 1.49.0
@@ -423,36 +447,18 @@ importers:
       postcss-url:
         specifier: ~10.1.3
         version: 10.1.3(postcss@8.4.49)
-      prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
-      prettier-plugin-organize-imports:
-        specifier: ^4.1.0
-        version: 4.1.0(prettier@3.3.3)(typescript@5.5.4)
-      prettier-plugin-tailwindcss:
-        specifier: ^0.6.8
-        version: 0.6.9(prettier-plugin-organize-imports@4.1.0(prettier@3.3.3)(typescript@5.5.4))(prettier@3.3.3)
-      replace-json-property:
-        specifier: ^1.9.0
-        version: 1.9.0
       rollup:
         specifier: ^4.22.5
         version: 4.27.3
       rollup-plugin-typescript-paths:
         specifier: ^1.5.0
         version: 1.5.0(typescript@5.5.4)
-      rollup-plugin-visualizer:
-        specifier: ^5.12.0
-        version: 5.12.0(rollup@4.27.3)
       semantic-release:
         specifier: ^24.1.2
         version: 24.2.0(typescript@5.5.4)
       start-server-and-test:
         specifier: ^2.0.8
         version: 2.0.8
-      tailwindcss:
-        specifier: ^3.4.13
-        version: 3.4.15(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4))
       ts-jest:
         specifier: ^29.2.5
         version: 29.2.5(@babel/core@7.26.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.0))(esbuild@0.24.0)(jest@29.7.0(@types/node@22.6.2)(ts-node@10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(typescript@5.5.4)))(typescript@5.5.4)
@@ -462,21 +468,12 @@ importers:
       types-tsconfig:
         specifier: ^2.1.1
         version: 2.1.1
-      typescript:
-        specifier: ~5.5.0
-        version: 5.5.4
       typescript-eslint:
         specifier: ^8.15.0
         version: 8.15.0(eslint@9.15.0(jiti@2.4.0))(typescript@5.5.4)
       verdaccio:
         specifier: ^5.0.4
         version: 5.32.2(encoding@0.1.13)(typanion@3.14.0)
-      vite:
-        specifier: 5.4.8
-        version: 5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6)
-      vite-tsconfig-paths:
-        specifier: 5.0.1
-        version: 5.0.1(typescript@5.5.4)(vite@5.4.8(@types/node@22.6.2)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6))
       vitest:
         specifier: 2.1.1
         version: 2.1.1(@types/node@22.6.2)(@vitest/ui@2.1.1)(jsdom@25.0.1)(less@4.2.0)(sass@1.81.0)(stylus@0.64.0)(terser@5.31.6)
@@ -3610,9 +3607,6 @@ packages:
 
   '@nx/plugin@20.1.1':
     resolution: {integrity: sha512-1u7fN5jZyeafplMFvCPBoLxNhty7O7l5QpOajHahHKWd2KyqEbCg92UCQNPgiKVhhPqcJz1pWjvIAGXSI1rrTg==}
-
-  '@nx/storybook@20.1.1':
-    resolution: {integrity: sha512-4nI3yD7C3pU1Yy75+AWhuDyWQudDxovcbshpMBT1rGHEEnQutz/+BUq82ARea9cfNdjruYjkLkKrpkQlYsIAAQ==}
 
   '@nx/vite@20.1.1':
     resolution: {integrity: sha512-nX+qVNhRmQZ2QAdzVr7lNNcicDx38UXM3S8FRPhmWP8w6IfsRGsyLjh6nqpxbyrfOxbg7D+7EEg/gUIue3oHXA==}
@@ -16832,30 +16826,6 @@ snapshots:
       - nx
       - supports-color
       - ts-node
-      - typescript
-      - verdaccio
-
-  '@nx/storybook@20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(@zkochan/js-yaml@0.0.7)(cypress@13.15.0)(eslint@9.15.0(jiti@2.4.0))(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))':
-    dependencies:
-      '@nx/cypress': 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(@zkochan/js-yaml@0.0.7)(cypress@13.15.0)(eslint@9.15.0(jiti@2.4.0))(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@nx/devkit': 20.1.1(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))
-      '@nx/eslint': 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(@zkochan/js-yaml@0.0.7)(eslint@9.15.0(jiti@2.4.0))(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@nx/js': 20.1.1(@babel/traverse@7.25.9)(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.6.2)(nx@20.1.1(@swc-node/register@1.10.9(@swc/core@1.7.26(@swc/helpers@0.5.13))(@swc/types@0.1.12)(typescript@5.5.4))(@swc/core@1.7.26(@swc/helpers@0.5.13)))(typescript@5.5.4)(verdaccio@5.32.2(encoding@0.1.13)(typanion@3.14.0))
-      '@phenomnomnominal/tsquery': 5.0.1(typescript@5.5.4)
-      semver: 7.6.3
-      tslib: 2.7.0
-    transitivePeerDependencies:
-      - '@babel/traverse'
-      - '@swc-node/register'
-      - '@swc/core'
-      - '@swc/wasm'
-      - '@types/node'
-      - '@zkochan/js-yaml'
-      - cypress
-      - debug
-      - eslint
-      - nx
-      - supports-color
       - typescript
       - verdaccio
 
