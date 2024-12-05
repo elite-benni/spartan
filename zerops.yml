@@ -1,0 +1,24 @@
+zerops:
+  - setup: spartanng
+    build:
+      base: nodejs@22
+      envVariables:
+        NODE_OPTIONS: --max-old-space-size=8192
+      buildCommands:
+        - pnpm i
+        - npx nx build app --prod
+      deployFiles:
+        - node_modules
+        - dist
+        - apps/app/drizzle
+    run:
+      base: nodejs@22
+      envVariables:
+        DATABASE_URL: ${db_connectionString}
+      initCommands:
+        - zsc execOnce $appVersionId -- npx drizzle-kit migrate --config=./apps/app/drizzle/drizzle.config.ts
+      ports:
+        - port: 3000
+          httpSupport: true
+      start: node dist/apps/app/analog/server/index.mjs
+#
