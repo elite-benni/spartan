@@ -32,11 +32,14 @@ export class BrnDialogTriggerDirective {
 	});
 	public readonly brnDialogTriggerForState = computed(() => signal(this.brnDialogTriggerForInput()));
 	public readonly brnDialogTriggerFor = computed(() => this.brnDialogTriggerForState()());
-	private readonly _brnDialogTriggerForEffect = effect(() => {
-		const brnDialog = this.brnDialogTriggerFor();
-		if (!brnDialog) return;
-		this._brnDialog = brnDialog;
-	});
+
+	constructor() {
+		effect(() => {
+			const brnDialog = this.brnDialogTriggerFor();
+			if (!brnDialog) return;
+			this._brnDialog = brnDialog;
+		});
+	}
 
 	open() {
 		this._brnDialog?.open();
