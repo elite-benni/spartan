@@ -60,7 +60,7 @@ export class BrnDialogComponent {
 
 	public readonly state = input<BrnDialogState | null>(null);
 
-	public readonly role = input<BrnDialogOptions['role']>('dialog');
+	public readonly role = input<BrnDialogOptions['role']>(this._defaultOptions?.role ?? 'dialog');
 
 	public readonly hasBackdrop = input(true, { transform: booleanAttribute });
 	protected readonly _mutableHasBackdrop = computed(() => signal(this.hasBackdrop()));
@@ -130,8 +130,8 @@ export class BrnDialogComponent {
 	});
 	public readonly mutableCloseOnOutsidePointerEvents = computed(() => signal(this.closeOnOutsidePointerEvents()));
 	private readonly _closeOnOutsidePointerEventsState = computed(() => this.mutableCloseOnOutsidePointerEvents()());
-	// this._defaultOptions.closeOnBackdropClick
-	public readonly closeOnBackdropClick = input(false, {
+
+	public readonly closeOnBackdropClick = input(this._defaultOptions.closeOnBackdropClick, {
 		transform: booleanAttribute,
 	});
 
