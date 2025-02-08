@@ -16,6 +16,11 @@ import { HlmSheetOverlayDirective } from './hlm-sheet-overlay.directive';
 			provide: BrnSheetComponent,
 			useExisting: forwardRef(() => HlmSheetComponent),
 		},
+		// provideBrnDialogDefaultOptions({
+		// 	closeOnBackdropClick: false,
+		// 	closeDelay: 100,
+		// 	scrollStrategy: null,
+		// }),
 	],
 	template: `
 		<brn-sheet-overlay hlm />
@@ -25,9 +30,4 @@ import { HlmSheetOverlayDirective } from './hlm-sheet-overlay.directive';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	exportAs: 'hlmSheet',
 })
-export class HlmSheetComponent extends BrnSheetComponent {
-	constructor() {
-		super();
-		this.closeDelayState().set(100);
-	}
-}
+export class HlmSheetComponent extends BrnSheetComponent {}

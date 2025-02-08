@@ -30,6 +30,7 @@ export class BrnDialogRef<DialogResult = any> {
 	}
 
 	public close(result?: DialogResult, delay: number = this._options?.closeDelay ?? 0) {
+		console.log('close', result, delay);
 		if (!this.open || this._options?.disableClose) return;
 
 		this._closing$.next();

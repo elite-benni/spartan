@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, forwardRef, ViewEncapsulation } from '@angular/core';
-import { BrnDialogComponent } from '@spartan-ng/brain/dialog';
+import { BrnDialogComponent, provideBrnDialogDefaultOptions } from '@spartan-ng/brain/dialog';
 
 @Component({
 	selector: 'brn-alert-dialog',
@@ -12,6 +12,10 @@ import { BrnDialogComponent } from '@spartan-ng/brain/dialog';
 			provide: BrnDialogComponent,
 			useExisting: forwardRef(() => BrnAlertDialogComponent),
 		},
+		provideBrnDialogDefaultOptions({
+			closeOnBackdropClick: false,
+			role: 'alertdialog',
+		}),
 	],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None,
@@ -20,8 +24,6 @@ import { BrnDialogComponent } from '@spartan-ng/brain/dialog';
 export class BrnAlertDialogComponent extends BrnDialogComponent {
 	constructor() {
 		super();
-		this.roleState().set('alertdialog');
-		this.closeOnBackdropClickState().set(false);
-		this.closeOnOutsidePointerEventsState().set(false);
+		this.mutableCloseOnOutsidePointerEvents().set(false);
 	}
 }
