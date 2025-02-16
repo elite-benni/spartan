@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  check_date:
+  check_date_and_repo:
     runs-on: ubuntu-latest
     name: Check latest commit
     outputs:
@@ -18,7 +18,7 @@ jobs:
       - id: should_run
         continue-on-error: true
         name: check latest commit is less than a day
-        if: ${{ github.event_name == 'schedule' }}
+        if: ${{ github.event_name == 'schedule' }} && ${{ github.repository_owner=='spartan-ng' && github.ref_name == 'main' }}
         # This command checks if there were any commits in the last 24 hours.
         # If there were NO recent commits, it sets should_run=false.
         # How it works:
@@ -33,8 +33,8 @@ jobs:
         run: test -z $(git rev-list  --after="23 hours 55 minutes"  ${{ github.sha }}) && echo "::set-output name=should_run::false"
 
   commitlint:
-    needs: check_date
-    if: ${{ needs.check_date.outputs.should_run != 'false' }}
+    needs: check_date_and_repo
+    if: ${{ needs.check_date_and_repo.outputs.should_run != 'false' }}
 
     runs-on: ubuntu-latest
     permissions:
@@ -60,8 +60,8 @@ jobs:
           helpURL: https://github.com/goetzrobin/spartan/blob/main/CONTRIBUTING.md#-commit-message-guidelines
 
   format-and-lint:
-    needs: check_date
-    if: ${{ needs.check_date.outputs.should_run != 'false' }}
+    needs: check_date_and_repo
+    if: ${{ needs.check_date_and_repo.outputs.should_run != 'false' }}
 
     runs-on: ubuntu-latest
     steps:
@@ -82,8 +82,8 @@ jobs:
         run: pnpm nx format:check --base=origin/main
 
   build:
-    needs: check_date
-    if: ${{ needs.check_date.outputs.should_run != 'false' }}
+    needs: check_date_and_repo
+    if: ${{ needs.check_date_and_repo.outputs.should_run != 'false' }}
 
     runs-on: ubuntu-latest
     steps:
@@ -103,10 +103,10 @@ jobs:
 
   release:
     needs:
-      - check_date
+      - check_date_and_repo
       - build
       - format-and-lint
-    if: ${{ needs.check_date.outputs.should_run != 'false' }}
+    if: ${{ needs.check_date_and_repo.outputs.should_run != 'false' }}
 
     runs-on: ubuntu-latest
     permissions:
