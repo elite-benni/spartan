@@ -1,5 +1,5 @@
 {
-	"name": "@spartan-ng/ui-alertdialog-helm",
+	"name": "@spartan-ng/ui-alert-dialog-helm",
 	"version": "0.0.1-alpha.381",
 	"sideEffects": false,
 	"dependencies": {},

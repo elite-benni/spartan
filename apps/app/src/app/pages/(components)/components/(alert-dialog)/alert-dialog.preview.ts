@@ -9,7 +9,7 @@ import {
 	HlmAlertDialogFooterComponent,
 	HlmAlertDialogHeaderComponent,
 	HlmAlertDialogTitleDirective,
-} from '@spartan-ng/ui-alertdialog-helm';
+} from '@spartan-ng/ui-alert-dialog-helm';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
 @Component({

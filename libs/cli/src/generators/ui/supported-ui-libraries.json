@@ -280,11 +280,11 @@
 			"clsx": "^2.1.1"
 		}
 	},
-	"toggle-group": {
-		"internalName": "ui-toggle-group-helm",
+	"togglegroup": {
+		"internalName": "ui-togglegroup-helm",
 		"peerDependencies": {
 			"@angular/core": ">=19.0.0",
-			"@spartan-ng/brain": "0.0.1-alpha.436",
+			"@spartan-ng/brain": "0.0.1-alpha.465",
 			"class-variance-authority": "^0.7.0",
 			"clsx": "^2.1.1"
 		}
@@ -396,15 +396,6 @@
 		"peerDependencies": {
 			"@angular/core": ">=19.0.0",
 			"@spartan-ng/brain": "0.0.1-alpha.465",
-			"clsx": "^2.1.1"
-		}
-	},
-	"togglegroup": {
-		"internalName": "ui-toggle-group-helm",
-		"peerDependencies": {
-			"@angular/core": ">=18.0.0",
-			"@spartan-ng/brain": "0.0.1-alpha.465",
-			"class-variance-authority": "^0.7.0",
 			"clsx": "^2.1.1"
 		}
 	},

@@ -22,13 +22,14 @@ export async function migrateHelmLibrariesGenerator(tree: Tree, options: Migrate
 	if (process.env.JEST_WORKER_ID) {
 		return;
 	}
+	const sortedLibs = existingLibraries.sort();
 
 	// allow the user to select which libraries to migrate
 	const selectedLibraries = await prompt({
 		type: 'multiselect',
 		name: 'libraries',
 		message: 'The following libraries are installed. Select the ones you want to replace with the latest version:',
-		choices: ['all', ...existingLibraries],
+		choices: ['all', ...sortedLibs],
 	});
 
 	// prompt the user to confirm their actions as this will overwrite the existing libraries and remove any customizations

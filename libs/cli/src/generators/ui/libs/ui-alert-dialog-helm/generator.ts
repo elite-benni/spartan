@@ -6,7 +6,7 @@ export async function generator(tree: Tree, options: HlmBaseGeneratorSchema) {
 	return await hlmBaseGenerator(tree, {
 		...options,
 		primitiveName: 'alertdialog',
-		internalName: 'ui-alert-dialog-helm',
+		internalName: 'ui-alertdialog-helm',
 		publicName: 'ui-alertdialog-helm',
 	});
 }

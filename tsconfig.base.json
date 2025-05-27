@@ -70,7 +70,7 @@
 			"@spartan-ng/trpc": ["libs/trpc/src/index.ts"],
 			"@spartan-ng/ui-accordion-helm": ["libs/ui/accordion/helm/src/index.ts"],
 			"@spartan-ng/ui-alert-helm": ["libs/ui/alert/helm/src/index.ts"],
-			"@spartan-ng/ui-alertdialog-helm": ["libs/ui/alert-dialog/helm/src/index.ts"],
+			"@spartan-ng/ui-alert-dialog-helm": ["libs/ui/alert-dialog/helm/src/index.ts"],
 			"@spartan-ng/ui-aspectratio-helm": ["libs/ui/aspect-ratio/helm/src/index.ts"],
 			"@spartan-ng/ui-avatar-helm": ["libs/ui/avatar/helm/src/index.ts"],
 			"@spartan-ng/ui-badge-helm": ["libs/ui/badge/helm/src/index.ts"],
